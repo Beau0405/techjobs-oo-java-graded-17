@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+//import static java.lang.System.lineSeparator;
+
 public  class Job {
 
    public int id;
@@ -56,9 +58,18 @@ public  class Job {
         return name;
     }
 
+
+
+//    public String getValue(){
+//        if (value == null || value.isEmpty()){
+//            return "Data not available";
+//        }
+//        return value;
+//    }
+
     public void setName(String name) {
-        this.name = name;
-    }
+    this.name = name;
+}
 
     public Employer getEmployer() {
         return employer;
@@ -98,7 +109,7 @@ public  class Job {
 
     @Override
     public String toString() {
-        return "\n" +
+        return  "\n" +
                 "ID: " + id +
                 "\nName: " + name +
                 "\nEmployer: " + employer.getValue() +
